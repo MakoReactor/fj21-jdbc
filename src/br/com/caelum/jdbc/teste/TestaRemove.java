@@ -7,7 +7,7 @@ public class TestaRemove {
 
 	public static void main(String[] args) {
 		Contato contato = new Contato();
-		contato.setId((long) 3);
+		contato.setId((long) 1);
 		
 		ContatoDao dao = new ContatoDao();
 		

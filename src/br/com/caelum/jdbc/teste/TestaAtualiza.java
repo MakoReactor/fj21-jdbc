@@ -13,7 +13,7 @@ public class TestaAtualiza {
 		contato.setEmail("jao@email.com.br");
 		contato.setEndereco("Rua do João nº 999");
 		contato.setDataNascimento(Calendar.getInstance());
-		contato.setId((long) 1);
+		contato.setId((long) 7);
 		
 		// gravar nesta conexão
 		ContatoDao dao = new ContatoDao();
