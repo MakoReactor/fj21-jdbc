@@ -10,7 +10,7 @@ public class TestaAlteraFuncionario {
 		funcionario.setNome("Pedro de jesus");
 		funcionario.setUsuario("pedroj");
 		funcionario.setSenha("131313");
-		funcionario.setId((long) 2);
+		funcionario.setId((long) 12);
 				
 		FuncionarioDao dao = new FuncionarioDao();
 		dao.altera(funcionario);

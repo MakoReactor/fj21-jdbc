@@ -82,7 +82,15 @@ public class FuncionarioDao {
 		}
 	}
 	public void remove(Funcionario funcionario){
-		PreparedStatement stmt = this.connection.prepareStatement("");
+		try {
+			PreparedStatement stmt = this.connection.prepareStatement("delete from funcionarios where id=?");
+			stmt.setLong(1, funcionario.getId());
+			stmt.execute();
+			stmt.close();
+			
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
 	}
 	
 
