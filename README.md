@@ -1,4 +1,4 @@
 fj21-jdbc
 =========
 
-Study java EE
+Study Java EE
