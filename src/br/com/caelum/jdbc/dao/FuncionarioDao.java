@@ -81,6 +81,9 @@ public class FuncionarioDao {
 			throw new RuntimeException (e);
 		}
 	}
+	public void remove(Funcionario funcionario){
+		PreparedStatement stmt = this.connection.prepareStatement("");
+	}
 	
 
 }
