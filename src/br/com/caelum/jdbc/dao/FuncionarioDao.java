@@ -64,5 +64,23 @@ public class FuncionarioDao {
 		}
 	}
 	
+	public void altera (Funcionario funcionario){
+		String sql = "update funcionarios set nome=?, usuario=?, senha=? where id =?";
+		
+		try{
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setString(1, funcionario.getNome());
+			stmt.setString(2, funcionario.getUsuario());
+			stmt.setString(3, funcionario.getSenha());
+			stmt.setLong(4, funcionario.getId());
+			
+			stmt.execute();
+			stmt.close();
+			
+		}catch(SQLException e){
+			throw new RuntimeException (e);
+		}
+	}
+	
 
 }
