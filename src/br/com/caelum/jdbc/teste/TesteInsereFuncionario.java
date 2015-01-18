@@ -7,9 +7,9 @@ public class TesteInsereFuncionario {
 
 	public static void main(String[] args) {
 		Funcionario funcionario = new Funcionario();
-		funcionario.setNome("João Bolão");
-		funcionario.setUsuario("jobolao");
-		funcionario.setSenha("987654");
+		funcionario.setNome("Administrador");
+		funcionario.setUsuario("admin");
+		funcionario.setSenha("admin");
 		
 		FuncionarioDao dao = new FuncionarioDao();
 		dao.adciona(funcionario);
